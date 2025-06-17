@@ -435,6 +435,74 @@ transform: scale(1.03);
 
 }
 
+/*other services*/
+
+.other-services {
+  background: var(--second-bg-color);
+  padding: 8rem 0;
+}
+
+.other-services .heading {
+  color: var(--text-color);
+  margin-bottom: 4rem;
+}
+
+.other-services-container {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 4rem;
+  flex-wrap: wrap;
+  padding: 0 10%;
+}
+
+.other-service-card {
+  background: var(--bg-color);
+  border: 2px solid var(--main-color);
+  border-radius: 2rem;
+  padding: 4rem 2rem;
+  flex: 1 1 320px;
+  max-width: 400px;
+  min-width: 260px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  box-shadow: 0 0 15px var(--main-color, #7ABA49);
+  transition: 0.3s;
+}
+
+.other-service-card:hover {
+  box-shadow: 0 0 25px var(--main-color), 0 0 50px var(--main-color);
+  transform: scale(1.03);
+}
+
+.other-service-card h3 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  color: var(--main-color);
+}
+
+.other-service-card p {
+  font-size: 1.6rem;
+  margin-bottom: 2.5rem;
+  color: var(--text-color);
+}
+
+.other-service-card img {
+
+  max-width: 200px;
+  margin: 2rem 2rem;
+  border-radius:  50%;
+}
+
+.other-service-card .btn {
+  font-size: 1.6rem;
+  padding: 1rem 2.5rem;
+}
+
+/* contact */
+
 .contact{
   background-color: var(--bg-color);
 }
@@ -658,6 +726,18 @@ transform: scale(1.03);
 .social-icons p {
   font-size: 2.2rem;
 }
+.other-services-container {
+    flex-direction: column;
+    align-items: center;
+    padding: 0 3rem;
+    gap: 2rem;
+}
+.other-service-card {
+  align-items: center;
+  justify-content: center;
+  max-width: 100%;
+  width: 100%;
+}
 
 
 
@@ -741,6 +821,27 @@ transform: scale(1.03);
   }
   .social-icons p {
     font-size: 1.8rem;
+  }
+
+
+  .other-services {
+    padding: 4rem 0;
+  }
+  .other-services .heading {
+    font-size: 3.5rem;
+  }
+  .other-service-card {
+    padding: 2rem 1rem;
+  }
+  .other-service-card h3 {
+    font-size: 2rem;
+  }
+  .other-service-card p {
+    font-size: 1.2rem;
+  }
+  .other-service-card .btn {
+    font-size: 1.2rem;
+    padding: 0.8rem 1.5rem;
   }
 }
 
