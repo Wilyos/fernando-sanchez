@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Fernando Sánchez</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
@@ -25,8 +25,8 @@
         <a href="#soluciones">Soluciones</a>
         <a href="#contacto">Contacto</a>
       </nav>
-      <a href="#contacto">
-        <button class="gradient-btn">Contáctame</button>
+      <a href="#contacto" class="js-open-modal" data-target="contact-modal">
+        <button type="button" class="gradient-btn">Contáctame</button>
       </a>
     </header>
     
@@ -51,7 +51,7 @@
           </div>
           
           <div class="social-icons-desc-box">
-            <a href="https://wa.me/573103904891?text=Hola%2C%20estoy%20interesado%20en%20algunos%20productos" target="_blank">
+            <a href="https://wa.me/573103904891?text=Hola%2C%20estoy%20interesado%20en%20algunos%20productos" target="_blank" class="js-open-modal" data-target="contact-modal" aria-label="WhatsApp">
               <i class="bx bxl-whatsapp"></i>
             </a>
             <p style="font-size: small;">whatsapp</p>
@@ -104,7 +104,7 @@
       <div class="projects-box">
 
         <div class="project-card">
-          <img src="/assets/20a.png" alt="logo">
+          <img src="assets/20a.png" alt="logo" loading="lazy" decoding="async">
 
           <h3>Nosotros</h3>
 
@@ -114,7 +114,7 @@
         </div>
 
         <div class="project-card">
-          <img src="/assets/logoSis.png" alt="eco">
+          <img src="assets/logoSis.png" alt="eco" loading="lazy" decoding="async">
 
           <h3>Comprometidos con el medio ambiente</h3>
 
@@ -125,7 +125,7 @@
       
 
         <div class="project-card">
-            <img src="/assets/impresion-offset.png" alt="soluciones">
+            <img src="assets/impresion-offset.png" alt="soluciones" loading="lazy" decoding="async">
 
             <h3>Soluciones</h3>
 
@@ -227,13 +227,13 @@
       <div class="other-services-container">
         <div class="other-service-card">
           <h3>Sistemas NFC</h3>
-          <img src="/assets/snfclogo.png" alt="" >
+          <img src="assets/snfclogo.png" alt="Sistemas NFC" loading="lazy" decoding="async">
           <p>Conoce nuestras tarjetas de presentación web personalizadas.</p>
           <a href="https://drive.google.com/file/d/1HELxpTKUnFfcVerUGQ8Z6QAVnPPWyxRC/view?usp=sharing" target="_blank" class="btn">Ver más</a>
         </div>
         <div class="other-service-card">
           <h3>Sistemas Digitales</h3>
-          <img src="/assets/sdiglogo.png" alt="" >
+          <img src="assets/sdiglogo.png" alt="Sistemas Digitales" loading="lazy" decoding="async">
           <p>
             ofrecemos una amplia gama de servicios diseñados para abordar cualquier desafío de marketing que tu empresa pueda enfrentar.  
           </p>
@@ -245,42 +245,119 @@
     <section class="contact" id="contacto">
       <h2 class="heading">Contácta<span>me</span></h2>
 
-     <div class="social-icons">
-          
-          <ul>
+      <div class="contact-wrapper">
+        <div class="contact-info-card">
+          <h3>Información Directa</h3>
+          <p class="contact-subtitle">¿Tienes un proyecto en mente? Escríbeme y cotizamos al instante.</p>
+          <ul class="contact-list">
             <li>
-               <a href="https://www.google.com/maps/place/Cl.+54+%2354-43,+La+Candelaria,+Medellín,+La+Candelaria,+Medellín,+Antioquia/@6.2525467,-75.5736819,15.75z/data=!4m10!1m2!2m1!1sCl.+54+%23+54-43+La+Candelaria+Medellín,+La+Candelaria,+Medellín,+Antioquia!3m6!1s0x8e4428fc30eabf8d:0x806cee01ca42f59d!8m2!3d6.2545499!4d-75.5707107!15sCktDbC4gNTQgIyA1NC00MyBMYSBDYW5kZWxhcmlhIE1lZGVsbMOtbiwgTGEgQ2FuZGVsYXJpYSwgTWVkZWxsw61uLCBBbnRpb3F1aWGSARFjb21wb3VuZF9idWlsZGluZ-ABAA!16s%2Fg%2F11fq6prxdc?hl=es&entry=ttu&g_ep=EgoyMDI1MDUxNS4xIKXMDSoASAFQAw%3D%3D" target="_blank">
+              <a href="https://www.google.com/maps/place/Cl.+54+%2354-43,+La+Candelaria,+Medellín,+La+Candelaria,+Medellín,+Antioquia/@6.2525467,-75.5736819,15.75z/data=!4m10!1m2!2m1!1sCl.+54+%23+54-43+La+Candelaria+Medellín,+La+Candelaria,+Medellín,+Antioquia!3m6!1s0x8e4428fc30eabf8d:0x806cee01ca42f59d!8m2!3d6.2545499!4d-75.5707107!15sCktDbC4gNTQgIyA1NC00MyBMYSBDYW5kZWxhcmlhIE1lZGVsbMOtbiwgTGEgQ2FuZGVsYXJpYSwgTWVkZWxsw61uLCBBbnRpb3F1aWGSARFjb21wb3VuZF9idWlsZGluZ-ABAA!16s%2Fg%2F11fq6prxdc?hl=es&entry=ttu&g_ep=EgoyMDI1MDUxNS4xIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener">
                 <i class='bx bx-been-here'></i>
               </a>
-              <P class="social-icons-pc">Calle 54 # 54-43 Medellín</P>
+              <a href="https://www.google.com/maps/place/Cl.+54+%2354-43,+La+Candelaria,+Medellín,+La+Candelaria,+Medellín,+Antioquia/@6.2525467,-75.5736819,15.75z/data=!4m10!1m2!2m1!1sCl.+54+%23+54-43+La+Candelaria+Medellín,+La+Candelaria,+Medellín,+Antioquia!3m6!1s0x8e4428fc30eabf8d:0x806cee01ca42f59d!8m2!3d6.2545499!4d-75.5707107!15sCktDbC4gNTQgIyA1NC00MyBMYSBDYW5kZWxhcmlhIE1lZGVsbMOtbiwgTGEgQ2FuZGVsYXJpYSwgTWVkZWxsw61uLCBBbnRpb3F1aWGSARFjb21wb3VuZF9idWlsZGluZ-ABAA!16s%2Fg%2F11fq6prxdc?hl=es&entry=ttu&g_ep=EgoyMDI1MDUxNS4xIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener" class="contact-text-link">
+                <span class="social-icons-pc">Calle 54 # 54-43 Medellín</span>
+              </a>
             </li>
             <li>
-              <a id="downloadContact" href="#" download="Sistemas.vcf">
+              <a href="#" class="js-download-contact" download="Fernando_Sanchez.vcf">
                 <i class='bx bx-phone'></i>
               </a>
-              <span> +57 316 528 1355</span>
+              <a href="#" class="js-download-contact contact-text-link" download="Fernando_Sanchez.vcf">
+                <span>+57 310 390 4891</span>
+              </a>
             </li>
             <li>
-              <a href="mailto:gerencia@sierraseguros.com">
+              <a href="mailto:contacto@sistemaslitograficos.com">
                 <i class='bx bx-envelope'></i>
               </a>
-              <span> contacto@sistemaslitograficos.com</span>
+              <a href="mailto:contacto@sistemaslitograficos.com" class="contact-text-link">
+                <span>contacto@sistemaslitograficos.com</span>
+              </a>
             </li>
             <li>
-              <a href="https://wa.me/573103904891" target="_blank">
+              <a href="https://wa.me/573103904891" target="_blank" class="js-open-modal" data-target="contact-modal" aria-label="Escríbeme por WhatsApp">
                 <i class='bx bxl-whatsapp'></i>
               </a>
-              <P class="social-icons-pc"> Escríbeme</P>
+              <a href="https://wa.me/573103904891" target="_blank" class="js-open-modal contact-text-link" data-target="contact-modal">
+                <span class="social-icons-pc">Escríbeme por WhatsApp</span>
+              </a>
             </li>
           </ul>
-       
         </div>
+
+        <div class="contact-form-card">
+          <div class="form-header">
+            <h3>Enviar Consulta a <span>WhatsApp</span></h3>
+            <p>Completa tus datos para enviarte cotización y asesoría técnica:</p>
+          </div>
+          <form class="contact-lead-form" data-form-type="inline">
+            <div class="input-box">
+              <i class='bx bx-user'></i>
+              <input type="text" name="nombre" placeholder="Nombre completo" required />
+            </div>
+            <div class="input-box">
+              <i class='bx bx-phone'></i>
+              <input type="tel" name="numero" placeholder="Número de WhatsApp" required />
+            </div>
+            <div class="input-box">
+              <i class='bx bx-buildings'></i>
+              <input type="text" name="empresa" placeholder="Empresa o Negocio" required />
+            </div>
+            <div class="input-box">
+              <i class='bx bx-message-square-detail'></i>
+              <textarea name="mensaje" rows="3" placeholder="Mensaje o proyecto a cotizar (opcional)"></textarea>
+            </div>
+            <button type="submit" class="btn btn-wa-submit">
+              <i class='bx bxl-whatsapp'></i> Enviar a WhatsApp
+            </button>
+          </form>
+        </div>
+      </div>
     </section>
 
     <footer class="footer">
-        <p class="copyright"> &copy; Sistemas Litograficos <br> todos los derechos reservados</p>
+      <p class="copyright">&copy; Sistemas Litográficos <br> Todos los derechos reservados</p>
     </footer>
 
+    <!-- Modal Emergente de Contacto -->
+    <div id="contact-modal" class="contact-modal" aria-hidden="true" role="dialog" aria-labelledby="modal-title">
+      <div class="modal-backdrop"></div>
+      <div class="modal-dialog">
+        <button type="button" class="modal-close" aria-label="Cerrar modal">&times;</button>
+        <div class="modal-header">
+          <div class="modal-tag"><i class='bx bxl-whatsapp'></i> WhatsApp Directo</div>
+          <h3 id="modal-title">Hablemos por <span>WhatsApp</span></h3>
+          <p>Déjanos tus datos y te responderé de inmediato:</p>
+        </div>
+        <form class="contact-lead-form" data-form-type="modal">
+          <div class="input-box">
+            <i class='bx bx-user'></i>
+            <input type="text" name="nombre" placeholder="Tu nombre completo" required />
+          </div>
+          <div class="input-box">
+            <i class='bx bx-phone'></i>
+            <input type="tel" name="numero" placeholder="Tu número de teléfono / WhatsApp" required />
+          </div>
+          <div class="input-box">
+            <i class='bx bx-buildings'></i>
+            <input type="text" name="empresa" placeholder="Tu empresa" required />
+          </div>
+          <div class="input-box">
+            <i class='bx bx-message-square-detail'></i>
+            <textarea name="mensaje" rows="3" placeholder="¿En qué solución estás interesado? (opcional)"></textarea>
+          </div>
+          <button type="submit" class="btn btn-wa-submit">
+            <i class='bx bxl-whatsapp'></i> Continuar a WhatsApp
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Toast de Notificación -->
+    <div id="toast" class="toast" role="status" aria-live="polite">
+      <i class='bx bx-check-circle'></i>
+      <span class="toast-msg">¡Datos guardados! Abriendo WhatsApp...</span>
+    </div>
 
     <script src="script.js"></script>
   </body>
